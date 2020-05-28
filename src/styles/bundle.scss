@@ -1,0 +1,320 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+hr {
+  border: 2px solid #666;
+}
+html {
+  height: 100vh;
+}
+body {
+
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  height: 100vh;
+}
+
+#root {
+  height: 100vh;
+
+  .app {
+    height:100vh;
+  }
+}
+
+.back {
+  width: 30px;
+  height: 30px;
+  background-image: url('../assets/img/left-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+
+.movieList {
+  text-align: center;
+  padding: 100px 2% 30% 2%;
+  height: auto;
+
+  h1 {
+    font-size: 3em;
+    margin: 30px 0;
+  }
+
+
+  .filterByGenre {
+    width:94%;
+    height: 60px;
+    text-align: left;
+    background: #F4F4F4;
+    margin-bottom: 30px;
+    padding: 10px 3%;
+    display: table;
+
+    span {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    label {
+      margin-right: 15px;
+
+    }
+  }
+
+  ul {
+    margin: auto;
+    text-align:inherit;
+    width: 80%;
+    height: auto;
+    padding: 0;
+    list-style: none;
+    li {
+      clear: both;
+      margin-bottom: 30px;
+      display: block;
+
+      a {
+        text-decoration: none;
+        text-align: left;
+        color: darkgray;
+
+        h2 {
+          font-size: 2em;
+          padding-top: 15px;
+        }
+
+        span {
+          padding-top: 25px;
+          text-align: inherit;
+          display: block;
+          margin-top: 10px;
+          line-height: 25px;
+        }
+
+        .more {
+          width: 120px;
+          background: #333;
+          color: #FFF;
+          text-align: center;
+          padding: 10px 10px;
+          float: right;
+
+          &:hover {
+            color:#333;
+            background: #CCC;
+          }
+        }
+
+        img {
+          width: 25%;
+          height: auto;
+          float: left;
+          margin: 0 1% 1% 0;
+
+        }
+      }
+    }
+
+
+  }
+}
+
+.details {
+  padding: 100px 2% 200px 2%;
+  height: 100%;
+  clear: left;
+
+  .poster {
+    float: left;
+    margin-right: 20px;
+    width: 40%;
+    img{
+      width:100%
+    }
+  }
+  .info {
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    span {
+      line-height: 25px;
+    }
+  }
+}
+
+.about, .advSearch {
+  padding: 100px 5% 0 5%;
+  height: calc(100% - 100px);
+
+  h2 {
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  div {
+    line-height: 30px;
+
+    span {
+      display: block;
+      margin-top: 40px;
+    }
+  }
+}
+
+
+
+.header {
+  position: fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  height: 70px;
+  max-height: 15%;
+  background: yellowgreen;
+  z-index: 10;
+
+
+
+}
+
+nav {
+  display: flex;
+  margin: 0 auto;
+  justify-content: left;
+  flex-direction: row;
+  align-items: left;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+
+  .search {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+
+    input {
+      height: 30px;
+      width: 200px;
+      padding: 3px 32px 3px 3px;
+      border: 1px solid #333;
+      background-image: url('../assets/icons/search.svg');
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    #searchResults {
+      position: absolute;
+      top:30px;
+      background: #FFF;
+      border-left: 2px solid #F4F4F4;
+
+      li {
+        max-width: 200px;
+        height: auto;
+        padding: 3px;
+        cursor: pointer;
+        margin-bottom: 2px;
+        font-size: 14px;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #666666;
+        }
+
+        &:hover {
+          background: #F4F4F4;
+        }
+      }
+
+    }
+  }
+
+  ul.menu {
+    position: relative;
+    width: 100%;
+
+    li {
+      display: inline-flex;
+      padding: 25px;
+      width: 70px;
+
+      a {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #F4F4F4;
+        text-decoration: none;
+      }
+
+
+
+    }
+  }
+
+}
+
+.footer {
+  height: 45px;
+  width: 96%;
+  padding: 20px 2%;
+  margin-bottom: -60px;
+  background: #F4F4F4;
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  clear: left;
+}
+
