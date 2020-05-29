@@ -35,3 +35,10 @@ To watch the built platform you can use localhost:1805 , a custom port that i se
 I configured react with redux following some documentation, so, i created a dir for actions, reducers, and also for api component that is lib/ .
 
 First of all i began to project how many sections site must have, structured with a classical header, page, footer. I tried to realize a simple navigable website, with an input search in header, that would be present in all pages, and container managed through the use of react-router. So installed react-router and start to create pages and structure. 
+If use router you must interface this with redux flow, i used .withRouter and connect. 
+To obtain an object with movies, i studied API TMDB.org documentation and create a personale API_KEY to let api working. I saw the structure of JSON. So,the homepage shows a list of 20 movies receiving data from TMDB, every item contains all informations about movie and for convenience to show only image/title/description in the list.
+Clicking on single movie you go to detail page that is linked at /movie/:movie_id . When you click from homepage it opens the detail page and shows movie's datas reading an object passed through Props, it let us to not consume a call to api to obtain details data, but, of course, if you click for example a link received through a social from a friend, it opens directly the detail page that has no data in props. So, if so, i make a call to detail api service to obtain informations.
+For immediate use, the search is realized with an autocomplete component that calls the search API of TMDB, showing a list of movies, when you click on a choosen title, it redirects to detail page, but in this case it makes a call to API (but also in this way could be possible to pass datas to detail page and not consume a call).
+In the homepage there's also a call to TMDB API to obtain a list of all movie genres and show that in a select/option, so if you click on a single genre it filters data and modifies this.state.results that is used in rendering to show the movie list, filtered or not.
+
+
