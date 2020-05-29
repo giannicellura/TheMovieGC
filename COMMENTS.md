@@ -43,4 +43,9 @@ In the homepage there's also a call to TMDB API to obtain a list of all movie ge
 In testing autocomplete i discover that if you click out of the autocomplete list or select a title, the list still remained visible, so i used some trick to find where the user clicks and in case of clicking out, autocomplete list disappears.
 I created some actions and reducer, some of them simply insert in props what the user have done, in others, i stored datas (for example movieList or movieDetail object) to send them to clicked page, don't know if it's a best practice, but it works :-)
 For images i used (only 2) i've choosen to use SVG, because they are editable, and let you to create also some animations that could be an idea in a implementation case.
+In index.html i just inserted some icons for favicon. I edited all CSS about header, footer, and page container, simple inserted an example media query to modify the behaviour of header, considering two sizes but of course it should be in a deep way.
+
+###What should i do if a real project
+Of course a lot of steps have been ignored for this challenge. I would have realized for example a 404 page, a better meta tags for SEO, metatags for sharing on social with automatic image and text preview readable by social spiders, a more accurate and exciting graphics (if there's no a preset draft to follow), graphic test for mobile devices, paying special attention to apple devices that always surprise me for some abnormal behaviour, and on Safari browsers that have some problems with some working code (for example in downloading files by blob).
+
 
