@@ -45,7 +45,7 @@ I created some actions and reducer, some of them simply insert in props what the
 For images i used (only 2) i've choosen to use SVG, because they are editable, and let you to create also some animations that could be an idea in a implementation case.
 In index.html i just inserted some icons for favicon. I edited all CSS about header, footer, and page container, simple inserted an example media query to modify the behaviour of header, considering two sizes but of course it should be in a deep way.
 
-###What should i do if a real project
+### What should i do if a real project
 Of course a lot of steps have been ignored for this challenge. I would have realized for example a 404 page, a better meta tags for SEO, metatags for sharing on social with automatic image and text preview readable by social spiders, a more accurate and exciting graphics (if there's no a preset draft to follow), graphic test for mobile devices, paying special attention to apple devices that always surprise me for some abnormal behaviour, and on Safari browsers that have some problems with some working code (for example in downloading files by blob).
 
 
