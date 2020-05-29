@@ -46,6 +46,12 @@ For images i used (only 2) i've choosen to use SVG, because they are editable, a
 In index.html i just inserted some icons for favicon. I edited all CSS about header, footer, and page container, simple inserted an example media query to modify the behaviour of header, considering two sizes but of course it should be in a deep way.
 
 ### What should i do if a real project
-Of course a lot of steps have been ignored for this challenge. I would have realized for example a 404 page, a better meta tags for SEO, metatags for sharing on social with automatic image and text preview readable by social spiders, a more accurate and exciting graphics (if there's no a preset draft to follow), graphic test for mobile devices, paying special attention to apple devices that always surprise me for some abnormal behaviour, and on Safari browsers that have some problems with some working code (for example in downloading files by blob).
+Of course a lot of steps have been ignored for this challenge. I would have realized for example a 404 page, a better meta tags for SEO, metatags for sharing on social with automatic image and text preview readable by social spiders, a more accurate and exciting graphics (if there's no a preset draft to follow), graphic test for mobile devices, paying special attention to apple devices that always surprise me for some abnormal behaviour, and on Safari browsers that have some problems with some working code (for example in downloading files by blob). Resolving problems about cache, images/styles, using localstorage to understand if user is logged or have been logged, or it's first time that comes on website and so on. 
+
+### In conclusion
+This was my first app with React-redux and it was amazing to develope this features and surely i'm interested to deepen the argument, but it seems more simple respect to Angular library, surely, I speak as a layman!
+
+Thanks for your time
+Gianni Cellura
 
 
