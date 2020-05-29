@@ -68,7 +68,7 @@ class Details extends Component {
 
 
     render() {
-        console.log("DETT", this.props)
+        console.log("DETT", this.props, this.state)
         const { isLoaded, data } = this.state;
 
         if (!this.state.data) {

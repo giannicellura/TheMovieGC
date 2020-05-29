@@ -24,6 +24,7 @@ const Header = (props) => {
                     <li><Link to="/"  >Home</Link></li>
                     <li><Link to="/AdvSearch"  >Search+</Link></li>
                     <li><Link to="/about">About</Link></li>
+                    <li></li>
                 </ul>
 
                 <div className="search">

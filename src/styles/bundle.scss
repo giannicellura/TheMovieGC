@@ -50,6 +50,18 @@ table {
 hr {
   border: 2px solid #666;
 }
+
+//CUSTOM CSS FOR GLOBAL GAMING
+
+
+
+
+$break-small: 320px;
+$break-medium: 640px;
+$break-large: 1200px;
+
+
+
 html {
   height: 100vh;
 }
@@ -77,6 +89,28 @@ body {
   background-position: center;
   margin-bottom: 30px;
   cursor: pointer;
+}
+
+.header {
+  position: fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  height: 70px;
+
+  background: yellowgreen;
+  z-index: 10;
+
+  @media screen and (max-width: $break-medium) {
+    height: 130px;
+    float: none;
+  }
+
+  @media screen and (max-width: $break-small) {
+    height: 200px;
+    float: none;
+  }
+
 }
 
 
@@ -215,19 +249,7 @@ body {
 
 
 
-.header {
-  position: fixed;
-  top:0px;
-  left:0px;
-  right:0px;
-  height: 70px;
-  max-height: 15%;
-  background: yellowgreen;
-  z-index: 10;
 
-
-
-}
 
 nav {
   display: flex;
@@ -289,7 +311,8 @@ nav {
 
     li {
       display: inline-flex;
-      padding: 25px;
+      margin-top: 20px;
+      padding: 5px 25px;
       width: 70px;
 
       a {

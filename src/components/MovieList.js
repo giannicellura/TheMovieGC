@@ -125,7 +125,7 @@ import { movieGenres,selectedGenre } from '../actions/genreAction';
 
       render() {
 
-        //console.log("STATE",this.state, this.props)
+        //console.log("ML",this.props, this.state)
         const { totalResults, totalPages, results, loading } = this.state;
 
         return (
@@ -165,7 +165,8 @@ import { movieGenres,selectedGenre } from '../actions/genreAction';
 
 
 const mapStateToProps = state => ({
-    ...state
+    ...state.movieList
+
 })
 
 const mapDispatchToProps = dispatch => ({
